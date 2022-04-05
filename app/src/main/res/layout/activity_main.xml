@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="350dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_edt"
+        android:drawableLeft="@drawable/_d"
+        android:ems="10"
+        android:hint="   Put name to add"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#208CC9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInput"
+        android:layout_marginLeft="0dp" />
+
+    <Button
+        android:id="@+id/btnRemove"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_btn"
+        android:text="Remove"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#208CC9"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd"
+        android:layout_marginLeft="0dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_btn"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#208CC9"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRemove"
+        app:layout_constraintStart_toEndOf="@+id/btnRemove"
+        app:layout_constraintTop_toTopOf="@+id/btnRemove"
+        android:layout_marginLeft="0dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:listSelector="#A48BC6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemove"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
